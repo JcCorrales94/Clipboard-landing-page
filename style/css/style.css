@@ -1,0 +1,374 @@
+:root {
+  --primary-strong-cyan:#26baa4;
+  --primary-strong-cyan--shadow:hsl(171, 50%, 40%);
+  --primary-light-blue:#6173ff;
+  --primary-light-blue--shadow:hsl(233, 50%, 55%);
+  --neutral-dark-grayish-blue:#4c545d;
+  --neutral-grayish-blue:#9fabb2;
+  --footer: #f4f6f8;
+}
+
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--neutral-dark-grayish-blue);
+  line-height: 0.5;
+}
+@media screen and (max-width: 900px) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+  }
+}
+
+p {
+  font-size: 1.8rem;
+  color: var(--neutral-grayish-blue);
+  line-height: 1.4;
+}
+@media screen and (max-width: 900px) {
+  p {
+    font-size: 1.7rem;
+  }
+}
+
+.container {
+  width: 48%;
+  max-width: 690px;
+  min-width: 685px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 85%;
+    min-width: 0;
+  }
+}
+
+.header {
+  background-image: url(../../images/bg-header-desktop.png);
+  width: 100%;
+  height: 58rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header section .header__img {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+.header section .header__tittle {
+  font-size: 4.4rem;
+}
+.header section .header__button {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  margin: 4rem;
+}
+.header section .header__button .header__button--ios {
+  background-color: var(--primary-strong-cyan);
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 15rem;
+  font-size: 1.6rem;
+  box-shadow: 0rem 0.3rem 0rem 0rem var(--primary-strong-cyan--shadow);
+  cursor: pointer;
+}
+.header section .header__button .header__button--ios:active {
+  box-shadow: 0rem -0.3rem 0rem 0.2rem var(--primary-strong-cyan--shadow) inset;
+}
+.header section .header__button .header__button--mac {
+  background-color: var(--primary-light-blue);
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 15rem;
+  font-size: 1.6rem;
+  box-shadow: 0rem 0.3rem 0rem 0rem var(--primary-light-blue--shadow);
+  cursor: pointer;
+}
+.header section .header__button .header__button--mac:active {
+  box-shadow: 0rem -0.3rem 0rem 0.2rem var(--primary-light-blue--shadow) inset;
+}
+
+article .data__tittle {
+  font-size: 3.4rem;
+}
+article .data__paragraph {
+  margin-bottom: 10rem;
+}
+
+.container__graphic {
+  display: grid;
+  grid-template-columns: 0.5fr 0.4fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+.container__graphic img {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.container__graphic .graphic__data {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.container__graphic .graphic__data .graphic__data--art {
+  padding: 0 9rem;
+}
+.container__graphic .graphic__data .graphic__data--art .graphic__data--tittle {
+  font-size: 2rem;
+}
+
+.container__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 1rem;
+  align-items: baseline;
+  width: 85%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.container__list .graphic__data--tittle {
+  font-size: 2.4rem;
+  margin-top: 4rem;
+}
+
+.container__icons {
+  width: 90%;
+  max-width: 120rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10rem auto;
+  gap: 10rem;
+}
+
+.container__download {
+  width: 48%;
+  max-width: 690px;
+  min-width: 685px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container__download .data__paragraph {
+  margin: 0rem;
+}
+.container__download .header__button {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  margin: 4rem;
+}
+.container__download .header__button .header__button--ios {
+  background-color: var(--primary-strong-cyan);
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 15rem;
+  font-size: 1.6rem;
+  box-shadow: 0rem 0.3rem 0rem 0rem var(--primary-strong-cyan--shadow);
+  cursor: pointer;
+}
+.container__download .header__button .header__button--ios:active {
+  box-shadow: 0rem -0.3rem 0rem 0.2rem var(--primary-strong-cyan--shadow) inset;
+}
+.container__download .header__button .header__button--mac {
+  background-color: var(--primary-light-blue);
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 15rem;
+  font-size: 1.6rem;
+  box-shadow: 0rem 0.3rem 0rem 0rem var(--primary-light-blue--shadow);
+  cursor: pointer;
+}
+.container__download .header__button .header__button--mac:active {
+  box-shadow: 0rem -0.3rem 0rem 0.2rem var(--primary-light-blue--shadow) inset;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--footer);
+  margin: 0;
+  margin-top: 10rem;
+}
+footer .container__footer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.2fr;
+  align-items: center;
+  justify-items: left;
+  margin: 0 auto;
+  padding: 1rem;
+}
+footer .container__footer img {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+footer .container__footer .footer__nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem 7rem;
+  font-size: 1.8rem;
+  height: 10rem;
+  transform: translateY(2rem);
+}
+footer .container__footer .footer__nav li {
+  list-style: none;
+}
+footer .container__footer .footer__nav li a {
+  text-decoration: none;
+  color: var(--neutral-dark-grayish-blue);
+  font-weight: 600;
+}
+footer .container__footer .icons {
+  display: flex;
+  gap: 1rem;
+}
+footer .container__footer .icons img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    background-image: url(../../images/bg-header-mobile.png);
+    height: 70rem;
+  }
+  .header section .header__tittle {
+    font-size: 3.4rem;
+  }
+  .header section .header__button {
+    flex-direction: column;
+    width: 90%;
+    margin: 4rem auto;
+  }
+  .container__graphic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+  }
+  .container__graphic img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  .container__graphic .graphic__data {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  .container__graphic .graphic__data .graphic__data--art {
+    padding: 0 1rem;
+  }
+  .container__graphic .graphic__data .graphic__data--art .graphic__data--tittle {
+    line-height: 0;
+  }
+  .container__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .container__icons {
+    width: 95%;
+    flex-direction: column;
+  }
+  .container__download {
+    width: 83%;
+    min-width: 0px;
+  }
+  .container__download .data__tittle {
+    font-size: 3.2rem;
+  }
+  .container__download .data__paragraph {
+    margin: 0rem;
+  }
+  .container__download .header__button {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+  }
+  .container__download .header__button .header__button--ios {
+    background-color: var(--primary-strong-cyan);
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 15rem;
+    font-size: 1.6rem;
+    box-shadow: 0rem 0.3rem 0rem 0rem var(--primary-strong-cyan--shadow);
+    cursor: pointer;
+  }
+  .container__download .header__button .header__button--ios:active {
+    box-shadow: 0rem -0.3rem 0rem 0.2rem var(--primary-strong-cyan--shadow) inset;
+  }
+  .container__download .header__button .header__button--mac {
+    background-color: var(--primary-light-blue);
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 15rem;
+    font-size: 1.6rem;
+    box-shadow: 0rem 0.3rem 0rem 0rem var(--primary-light-blue--shadow);
+    cursor: pointer;
+  }
+  .container__download .header__button .header__button--mac:active {
+    box-shadow: 0rem -0.3rem 0rem 0.2rem var(--primary-light-blue--shadow) inset;
+  }
+  footer {
+    padding: 5rem 0rem;
+  }
+  footer .container__footer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 5rem;
+  }
+  footer .container__footer img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  footer .container__footer .footer__nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    text-align: center;
+    transform: none;
+  }
+  footer .container__footer .icons {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 5rem;
+  }
+  footer .container__footer .icons img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
