@@ -214,6 +214,7 @@ footer {
 }
 footer .container__footer {
   width: 80%;
+  max-width: 144rem;
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.2fr;
   align-items: center;
