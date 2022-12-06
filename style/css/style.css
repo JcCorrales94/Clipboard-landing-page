@@ -114,6 +114,8 @@ article .data__paragraph {
   grid-template-rows: 1fr;
   align-items: center;
   margin-bottom: 15rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .container__graphic img {
   grid-column: 1/2;
